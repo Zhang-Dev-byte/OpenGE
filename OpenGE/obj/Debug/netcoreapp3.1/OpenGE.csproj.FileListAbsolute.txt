@@ -1,0 +1,9 @@
+C:\OpenGE\OpenGE\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.deps.json
+C:\OpenGE\OpenGE\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.dll
+C:\OpenGE\OpenGE\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.pdb
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.csprojAssemblyReference.cache
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.csproj.CoreCompileInputs.cache
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfoInputs.cache
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfo.cs
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.dll
+C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.pdb
