@@ -21,7 +21,8 @@ namespace Sandbox
         private List<Button> buttons = new List<Button>();
         private List<Drawable> objects = new List<Drawable>();
         private List<Frame> frames = new List<Frame>();
-
+		
+		//AUDIO
         public void Render(RenderWindow window)
         {
             //HANDLE EVENTS
@@ -35,6 +36,8 @@ namespace Sandbox
 
         public void Start()
         {
+			//PLAY AUDIO
+			
             //OBJECTS
             
             //BUTTONS
