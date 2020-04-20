@@ -14,7 +14,13 @@ namespace OpenGE
         {
             background = _background;
             text = _text;
+            Vector2f textPos = text.Position;
+            Vector2f textSize = new Vector2f(text.GetGlobalBounds().Width,text.GetGlobalBounds().Height);
+            Vector2f backSize = background.Size;
             text.Position = background.Position;
+            textPos.X += (backSize.X / 2) - ((textSize.X/2) - (textSize.X/4));
+            textPos.Y += (backSize.Y / 2)-(textSize.Y);
+            text.Position = textPos;
         }
 
         public static bool GetClick(MouseButtonEventArgs e,Vector2f mousePos,Button button)
