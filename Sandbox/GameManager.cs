@@ -22,6 +22,7 @@ namespace Sandbox
         private List<Drawable> objects = new List<Drawable>();
         private List<Frame> frames = new List<Frame>();
         private List<Animation> animations = new List<Animation>();
+		private List<Text> text= new List<Text>();
 		
 		//AUDIO
         public void Render(RenderWindow window)
@@ -34,6 +35,7 @@ namespace Sandbox
             Renderer.Render(window,objects);
             UIRenderer.RenderButtons(window,buttons);
 			AnimationRenderer.Render(animations,window);
+			TextRenderer.Render(text,window);
         }
 
         public void Start()
@@ -47,6 +49,8 @@ namespace Sandbox
             //FRAMES
 			
 			//ANIMATIONS
+			
+			//TEXT
             
             //Run all the GEObject "Start" Methods
         }
