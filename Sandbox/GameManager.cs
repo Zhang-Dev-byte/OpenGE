@@ -1,5 +1,12 @@
 
 using OpenGE;
+using OpenGE;
+using OpenGE.Math;
+using OpenGE.Utilities;
+using OpenGE.Renderer;
+using OpenGE.Collision;
+using OpenGE.Physics;
+using OpenGE.Audio;
 using System.Collections.Generic;
 using SFML.Graphics;
 using SFML.System;
