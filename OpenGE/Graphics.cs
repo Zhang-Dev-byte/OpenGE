@@ -8,91 +8,94 @@ using SFML.System;
 
 namespace OpenGE
 {
-    public class Graphics
+    namespace Utilities
     {
-        /// <summary>
-        /// Fill a rectangle shape
-        /// </summary>
-        public static RectangleShape DrawRect(Vector2f size,Color outlineColor,int outlineThickness,Color color,Vector2f position)
+        public class Graphics
         {
-            RectangleShape rectangle = new RectangleShape();
-            
-            rectangle.Size = size;
-            rectangle.OutlineColor = outlineColor;
-            rectangle.FillColor = color;
-            rectangle.OutlineThickness = outlineThickness;
-            rectangle.Position = position;
-
-            return rectangle;
-        }
-        /// <summary>
-        /// Fill a circle shape
-        /// </summary>
-        public static CircleShape DrawCircle(int radius,Color outlineColor,Color color,int outlineThickness,Vector2f pos)
-        {
-            CircleShape circle = new CircleShape();
-            circle.Radius = radius;
-            circle.OutlineColor = outlineColor;
-            circle.OutlineThickness = outlineThickness;
-            circle.Position = pos;
-            circle.FillColor = color;
-            return circle;
-        }
-        /// <summary>
-        /// Draw an image sprite
-        /// </summary>
-        public static Sprite Draw(string path,Vector2f pos)
-        {
-            try
+            /// <summary>
+            /// Fill a rectangle shape
+            /// </summary>
+            public static RectangleShape DrawRect(Vector2f size, Color outlineColor, int outlineThickness, Color color, Vector2f position)
             {
-                Texture texture = new Texture(path);
-                Sprite sprite = new Sprite(texture);
-                sprite.Texture = texture;
-                sprite.Position = pos;
+                RectangleShape rectangle = new RectangleShape();
 
-                return sprite;
+                rectangle.Size = size;
+                rectangle.OutlineColor = outlineColor;
+                rectangle.FillColor = color;
+                rectangle.OutlineThickness = outlineThickness;
+                rectangle.Position = position;
+
+                return rectangle;
             }
-            catch
+            /// <summary>
+            /// Fill a circle shape
+            /// </summary>
+            public static CircleShape DrawCircle(int radius, Color outlineColor, Color color, int outlineThickness, Vector2f pos)
             {
-                Console.WriteLine("Error: Cannot open Image");
-                return null;
+                CircleShape circle = new CircleShape();
+                circle.Radius = radius;
+                circle.OutlineColor = outlineColor;
+                circle.OutlineThickness = outlineThickness;
+                circle.Position = pos;
+                circle.FillColor = color;
+                return circle;
             }
-        }
-
-        /// <summary>
-        /// Loads a font
-        /// </summary>
-        public static Font LoadFont(string filename)
-        {
-            try
+            /// <summary>
+            /// Draw an image sprite
+            /// </summary>
+            public static Sprite Draw(string path, Vector2f pos)
             {
-                Font font = new Font(filename);
-                return font;
+                try
+                {
+                    Texture texture = new Texture(path);
+                    Sprite sprite = new Sprite(texture);
+                    sprite.Texture = texture;
+                    sprite.Position = pos;
+
+                    return sprite;
+                }
+                catch
+                {
+                    Console.WriteLine("Error: Cannot open Image");
+                    return null;
+                }
             }
-            catch
+
+            /// <summary>
+            /// Loads a font
+            /// </summary>
+            public static Font LoadFont(string filename)
             {
-                return null;
+                try
+                {
+                    Font font = new Font(filename);
+                    return font;
+                }
+                catch
+                {
+                    return null;
+                }
             }
-        }
 
-        /// <summary>
-        /// Makes A Button
-        /// </summary>
-        public static Button DrawButton(Font font,string str,RectangleShape background)
-        {
-            Text text = new Text(str,font);
-            Button button = new Button(background,text);
+            /// <summary>
+            /// Makes A Button
+            /// </summary>
+            public static Button DrawButton(Font font, string str, RectangleShape background)
+            {
+                Text text = new Text(str, font);
+                Button button = new Button(background, text);
 
-            return button;
-        }
+                return button;
+            }
 
-        /// <summary>
-        /// Makes Text Object
-        /// </summary>
-        public static Text DrawText(Font font, string str)
-        {
-            Text text = new Text(str,font);
-            return text;
+            /// <summary>
+            /// Makes Text Object
+            /// </summary>
+            public static Text DrawText(Font font, string str)
+            {
+                Text text = new Text(str, font);
+                return text;
+            }
         }
     }
 }

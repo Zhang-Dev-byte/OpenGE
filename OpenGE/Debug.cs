@@ -2,12 +2,15 @@
 
 namespace OpenGE
 {
-    public class Debug
+    namespace Utilities
     {
-        public static void Log(object message)
+        public class Debug
         {
-            Console.WriteLine(message.ToString());
+            public static void Log(object message)
+            {
+                Console.WriteLine(message.ToString());
+            }
+
         }
-        
     }
 }

@@ -2,23 +2,26 @@
 
 namespace OpenGE
 {
-    public class Audio
+    namespace Audio
     {
-        /// <summary>
-        /// Makes A Sound Object
-        /// </summary>
-        public static Sound LoadSound(string path)
+        public class Audio
         {
-            try
+            /// <summary>
+            /// Makes A Sound Object
+            /// </summary>
+            public static Sound LoadSound(string path)
             {
-                SoundBuffer buffer = new SoundBuffer(path);
-                Sound sound = new Sound(buffer);
+                try
+                {
+                    SoundBuffer buffer = new SoundBuffer(path);
+                    Sound sound = new Sound(buffer);
 
-                return sound;
-            }
-            catch
-            {
-                return null;
+                    return sound;
+                }
+                catch
+                {
+                    return null;
+                }
             }
         }
     }

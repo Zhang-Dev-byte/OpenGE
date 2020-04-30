@@ -7,3 +7,12 @@ C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfoInputs.cache
 C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfo.cs
 C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.dll
 C:\OpenGE\OpenGE\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.pdb
+C:\OpenGE Demo\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.deps.json
+C:\OpenGE Demo\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.dll
+C:\OpenGE Demo\OpenGE\bin\Debug\netcoreapp3.1\OpenGE.pdb
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.csprojAssemblyReference.cache
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.csproj.CoreCompileInputs.cache
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfoInputs.cache
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.AssemblyInfo.cs
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.dll
+C:\OpenGE Demo\OpenGE\obj\Debug\netcoreapp3.1\OpenGE.pdb

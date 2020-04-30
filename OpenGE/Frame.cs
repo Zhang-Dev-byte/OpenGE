@@ -2,12 +2,15 @@
 
 namespace OpenGE
 {
-    public class Frame
+    namespace Renderer
     {
-        public Sprite background;
-        public Frame(Sprite _background)
+        public class Frame
         {
-            background = _background;
+            public Sprite background;
+            public Frame(Sprite _background)
+            {
+                background = _background;
+            }
         }
     }
 }

@@ -1,7 +1,10 @@
 ﻿namespace OpenGE
 {
-    public interface UIRenderable
+    namespace Renderer
     {
+        public interface UIRenderable
+        {
 
+        }
     }
 }

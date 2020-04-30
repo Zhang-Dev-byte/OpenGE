@@ -445,19 +445,19 @@
   },
   "packageFolders": {
     "C:\\Users\\Oliver\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OpenGE\\OpenGE\\OpenGE\\OpenGE.csproj",
+      "projectUniqueName": "C:\\OpenGE Demo\\OpenGE\\OpenGE.csproj",
       "projectName": "OpenGE",
-      "projectPath": "C:\\OpenGE\\OpenGE\\OpenGE\\OpenGE.csproj",
+      "projectPath": "C:\\OpenGE Demo\\OpenGE\\OpenGE.csproj",
       "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
-      "outputPath": "C:\\OpenGE\\OpenGE\\OpenGE\\obj\\",
+      "outputPath": "C:\\OpenGE Demo\\OpenGE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",

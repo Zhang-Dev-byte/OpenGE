@@ -3,34 +3,37 @@ using SFML.System;
 
 namespace OpenGE
 {
-    public class Physics
+    namespace Physics
     {
-        /// <summary>
-        /// Implements physics to a sprite.
-        /// </summary>
-        public static void ImplementPhysicsSprite(Sprite rect)
+        public class Physics
         {
-            Vector2f position = rect.Position;
-            position.Y += 0.1f;
-            rect.Position = position;
-        }
-        /// <summary>
-        /// Implements physics to a rectangle.
-        /// </summary>
-        public static void ImplementPhysicsRect(RectangleShape rect)
-        {
-            Vector2f position = rect.Position;
-            position.Y += 0.1f;
-            rect.Position = position;
-        }
-        /// <summary>
-        /// Implements physics to a circle.
-        /// </summary>
-        public static void ImplementPhysicsCircle(CircleShape rect)
-        {
-            Vector2f position = rect.Position;
-            position.Y += 0.1f;
-            rect.Position = position;
+            /// <summary>
+            /// Implements physics to a sprite.
+            /// </summary>
+            public static void ImplementPhysicsSprite(Sprite rect)
+            {
+                Vector2f position = rect.Position;
+                position.Y += 0.5f;
+                rect.Position = position;
+            }
+            /// <summary>
+            /// Implements physics to a rectangle.
+            /// </summary>
+            public static void ImplementPhysicsRect(RectangleShape rect)
+            {
+                Vector2f position = rect.Position;
+                position.Y += 0.1f;
+                rect.Position = position;
+            }
+            /// <summary>
+            /// Implements physics to a circle.
+            /// </summary>
+            public static void ImplementPhysicsCircle(CircleShape rect)
+            {
+                Vector2f position = rect.Position;
+                position.Y += 0.1f;
+                rect.Position = position;
+            }
         }
     }
 }

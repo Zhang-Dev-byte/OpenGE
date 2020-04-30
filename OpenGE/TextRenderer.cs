@@ -4,13 +4,16 @@ using SFML.Graphics;
 
 namespace OpenGE
 {
-    public class TextRenderer
+    namespace Renderer
     {
-        public static void Render(List<Text> text,RenderWindow window)
+        public class TextRenderer
         {
-            foreach (Text t in text)
+            public static void Render(List<Text> text, RenderWindow window)
             {
-                window.Draw(t);
+                foreach (Text t in text)
+                {
+                    window.Draw(t);
+                }
             }
         }
     }

@@ -3,13 +3,16 @@ using SFML.Graphics;
 
 namespace OpenGE
 {
-    public class AnimationRenderer
+    namespace Renderer
     {
-        public static void Render(List<Animation> animations, RenderWindow window)
+        public class AnimationRenderer
         {
-            foreach (Animation anim in animations)
+            public static void Render(List<Animation> animations, RenderWindow window)
             {
-                window.Draw(anim.sprite);
+                foreach (Animation anim in animations)
+                {
+                    window.Draw(anim.sprite);
+                }
             }
         }
     }

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZtrqrP8KGPCs5uk4z67JuXUIF0oGED/+wn5B5PxuLQvhm9pvnqw6HajcLaT/8BVwAM80bwhLwb3HIC0mjgqp6A==",
+  "success": true,
+  "projectFilePath": "C:\\OpenGE Demo\\OpenGE\\OpenGE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oliver\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
+    "C:\\Users\\Oliver\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\Oliver\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\Oliver\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\Oliver\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\Oliver\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
