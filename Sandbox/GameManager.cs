@@ -1,5 +1,6 @@
 
 using OpenGE;
+using System.Collections.Generic;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
@@ -10,8 +11,8 @@ namespace Sandbox
     {
         //CONSTANTS
         public static string game = "Hello";
-        public static int width = 800;
-        public static int height = 800;
+        public static uint width = 800;
+        public static uint height = 800;
 
         //OBJECTS
         private static Font _font = Graphics.LoadFont("default.ttf");
