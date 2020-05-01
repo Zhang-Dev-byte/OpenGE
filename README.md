@@ -103,7 +103,7 @@ For example, an output directory could be this:
 
 ## Examples
 
-The is an example for a gift catching game if you save the correct assetsthsi code will work.
+The is an example for a gift catching game if you save the correct assets this code will work.
 
 ```c#
 
