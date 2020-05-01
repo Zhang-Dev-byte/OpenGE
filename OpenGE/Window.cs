@@ -13,7 +13,7 @@ namespace OpenGE
             /// </summary>
             public static void Create(uint width = 800, uint height = 800, string title = "OpenGE", Manager manager = null)
             {
-                RenderWindow window = new RenderWindow(new VideoMode(width, height), title);
+                RenderWindow window = new RenderWindow(new VideoMode(width, height), title,Styles.Titlebar | Styles.Close);
                 manager.Start();
                 while (window.IsOpen)
                 {
