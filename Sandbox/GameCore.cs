@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
-
+using OpenGE.Utilities;
 namespace Sandbox
 {
     class GameCore
