@@ -8,7 +8,7 @@ using SFML.System;
 
 namespace OpenGE
 {
-    namespace Utilities
+    namespace Renderer
     {
         public class Graphics
         {
@@ -56,8 +56,25 @@ namespace OpenGE
                 }
                 catch
                 {
-                    Console.WriteLine("Error: Cannot open Image");
-                    return null;
+                    throw new ImageLoadException("Failed to load Image");
+                }
+            }
+            /// <summary>
+            /// Draw an image sprite
+            /// </summary>
+            public static Sprite Draw(Texture texture, Vector2f pos)
+            {
+                try
+                {
+                    Sprite sprite = new Sprite(texture);
+                    sprite.Texture = texture;
+                    sprite.Position = pos;
+
+                    return sprite;
+                }
+                catch
+                {
+                    throw new ImageLoadException("Failed to load Image");
                 }
             }
 
