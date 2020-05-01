@@ -27,9 +27,10 @@ namespace Sandbox
     public class GameManager : Manager
     {
         //CONSTANTS
-        public static string game = "Hello";
+        public static string game = "OpenGE";
         public static uint width = 800;
         public static uint height = 800;
+        public static ShowState state = ShowState.Debug;
 
         //OBJECTS
         private static Font _font = Graphics.LoadFont("default.ttf");
@@ -109,6 +110,12 @@ The is an example for a gift catching game if you save the correct assets this c
 
 using System.Collections.Generic;
 using OpenGE;
+using OpenGE.Math;
+using OpenGE.Utilities;
+using OpenGE.Renderer;
+using OpenGE.Collision;
+using OpenGE.Physics;
+using OpenGE.Audio;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
@@ -118,9 +125,10 @@ namespace Sandbox
     public class GameManager : Manager
     {
         //CONSTANTS
-        public const string game = "OpenGE Demo";
-        public const int width = 800;
-        public const int height = 800;
+        public static string game = "OpenGE Demo";
+        public static uint width = 800;
+        public static uint height = 800;
+        public static ShowState state = ShowState.Debug;
 
         //OBJECTS
         private static Font _font = Graphics.LoadFont("default.ttf");
