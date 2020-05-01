@@ -9,7 +9,7 @@ namespace Sandbox
         /// </summary>
         static void Main(string[] args)
         {
-            OpenGE.Window.Create(GameManager.width,GameManager.height,GameManager.game,new GameManager());
+            OpenGE.Renderer.Window.Create(GameManager.width,GameManager.height,GameManager.game,new GameManager());
         }
     }
 }
