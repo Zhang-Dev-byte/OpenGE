@@ -21,10 +21,6 @@ namespace OpenGE
                     socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
                     client = new UdpClient(server.ipAddress, server.Port);
 
-                    Byte[] message = Encoding.ASCII.GetBytes("Hello");
-
-                    client.Send(message, message.Length);
-
 
                     socket.Connect(new IPEndPoint(IPAddress.Parse(server.ipAddress), server.Port));
                     Debug.Log($"Connected to {server.ipAddress} on port {server.Port}...");
