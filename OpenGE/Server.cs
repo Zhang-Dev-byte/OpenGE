@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
@@ -12,12 +12,18 @@ namespace OpenGE
         {
             public int Port { get; private set; }
             public string ipAddress { get; private set; }
+            public UdpClient recivingClient { get; private set; }
 
             private TcpListener listener;
+            private IPEndPoint IPEndPoint;
+            private byte[] recieveBuffer;
             public Server(int _Port,string _ipAddress)
             {
                 Port = _Port;
                 ipAddress = _ipAddress;
+
+                recivingClient = new UdpClient(_ipAddress,_Port);
+                IPEndPoint = new IPEndPoint(IPAddress.Parse(_ipAddress), Port);
 
                 Console.WriteLine("Starting server...");
 
@@ -26,6 +32,12 @@ namespace OpenGE
 
                 Console.WriteLine($"Server started on {Port}...");
 
+            }
+            public byte[] Listen()
+            {
+                recieveBuffer = recivingClient.Receive(ref IPEndPoint);
+
+                return recieveBuffer;
             }
         }
     }
