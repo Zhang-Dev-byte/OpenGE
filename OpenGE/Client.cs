@@ -13,11 +13,19 @@ namespace OpenGE
         {
 
             Socket socket;
+            UdpClient client;
             public void Connect(Server server)
             {
                 try
                 {
-                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+                    socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
+                    client = new UdpClient(server.ipAddress, server.Port);
+
+                    Byte[] message = Encoding.ASCII.GetBytes("Hello");
+
+                    client.Send(message, message.Length);
+
+
                     socket.Connect(new IPEndPoint(IPAddress.Parse(server.ipAddress), server.Port));
                     Debug.Log($"Connected to {server.ipAddress} on port {server.Port}...");
                 }
@@ -30,7 +38,8 @@ namespace OpenGE
             {
                 try
                 {
-                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+                    socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
+                    client = new UdpClient(ipAddress, Port);
 
                     socket.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), Port));
 
