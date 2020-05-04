@@ -18,7 +18,7 @@ namespace OpenGE
             {
                 try
                 {
-                    socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
+                    socket = new Socket(AddressFamily.InterNetwork,SocketType.Dgram, ProtocolType.Udp);
                     client = new UdpClient(server.ipAddress, server.Port);
 
 
@@ -34,7 +34,7 @@ namespace OpenGE
             {
                 try
                 {
-                    socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
+                    socket = new Socket(AddressFamily.InterNetwork,SocketType.Dgram, ProtocolType.Udp);
                     client = new UdpClient(ipAddress, Port);
 
                     socket.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), Port));
