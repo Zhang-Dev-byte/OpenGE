@@ -11,14 +11,13 @@ namespace OpenGE
     {
         public class Client
         {
-            TcpClient client;
+
             Socket socket;
             public void Connect(Server server)
             {
                 try
                 {
-                    client = new TcpClient(server.ipAddress, server.Port);
-                    socket = client.Client;
+                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
                     socket.Connect(new IPEndPoint(IPAddress.Parse(server.ipAddress), server.Port));
                     Debug.Log($"Connected to {server.ipAddress} on port {server.Port}...");
                 }
@@ -31,8 +30,7 @@ namespace OpenGE
             {
                 try
                 {
-                    client = new TcpClient(ipAddress,Port);
-                    socket = client.Client;
+                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
                     socket.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), Port));
 
@@ -49,4 +47,3 @@ namespace OpenGE
         }
     }
 }
-
