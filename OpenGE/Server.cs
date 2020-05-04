@@ -17,13 +17,13 @@ namespace OpenGE
             private TcpListener listener;
             private IPEndPoint IPEndPoint;
             private byte[] recieveBuffer;
-            public Server(int _Port,string _ipAddress)
+            public Server(int _Port, string _ipAddress)
             {
                 Port = _Port;
                 ipAddress = _ipAddress;
 
-                recivingClient = new UdpClient(_ipAddress,_Port);
-                IPEndPoint = new IPEndPoint(IPAddress.Parse(_ipAddress), Port);
+                recivingClient = new UdpClient(_ipAddress, _Port);
+                IPEndPoint = new IPEndPoint(IPAddress.Parse(_ipAddress), _Port);
 
                 Console.WriteLine("Starting server...");
 
@@ -32,12 +32,6 @@ namespace OpenGE
 
                 Console.WriteLine($"Server started on {Port}...");
 
-            }
-            public byte[] Listen()
-            {
-                recieveBuffer = recivingClient.Receive(ref IPEndPoint);
-
-                return recieveBuffer;
             }
         }
     }
