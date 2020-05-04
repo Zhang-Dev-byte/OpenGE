@@ -1,4 +1,4 @@
-﻿using OpenGE.Utilities;
+using OpenGE.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -11,11 +11,12 @@ namespace OpenGE
     {
         public class Client
         {
+            Socket socket;
             public void Connect(Server server)
             {
                 try
                 {
-                    Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
                     socket.Connect(new IPEndPoint(IPAddress.Parse(server.ipAddress), server.Port));
                     Debug.Log($"Connected to {server.ipAddress} on port {server.Port}...");
                 }
@@ -28,7 +29,7 @@ namespace OpenGE
             {
                 try
                 {
-                    Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+                    socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
                     socket.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), Port));
 
@@ -39,6 +40,10 @@ namespace OpenGE
                     throw new ClientConnectionException("Failed to connect to the server.");
                 }
             }
+            public void Disconnect(){
+                socket.Close();
+            }
         }
     }
 }
+
